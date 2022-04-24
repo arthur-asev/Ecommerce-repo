@@ -16,6 +16,34 @@ main {
   flex: 1;
 }
 
+.nav {}
+
+.nav a {
+  color: white !important;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  color: rgb(255, 253, 253);
+  background-color: #404040;
+
+}
+
+.dropdown-item:hover {
+  background: rgb(54, 54, 54) !important;
+}
+
+.dropdown-item.active {
+  background-color: rgb(34, 33, 33) !important;
+}
+
+.dropdown-menu {
+  background: rgb(46, 46, 46) !important;
+}
+
 .products {
   display: flex;
   flex-wrap: wrap;
