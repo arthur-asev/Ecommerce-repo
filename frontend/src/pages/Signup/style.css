@@ -1,0 +1,12 @@
+.small-container {
+    background-color: rgba(209, 209, 209, 0.74);
+    align-items: center;
+    box-shadow: 4px 5px rgba(8, 8, 8, 0.301);
+    border-radius: 8px;
+    width: 600px !important;
+    padding: 1rem;
+}
+
+.form {
+    padding: 1rem;
+}

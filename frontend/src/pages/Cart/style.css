@@ -1,0 +1,16 @@
+.fa-plus-circle {
+    color: green;
+}
+
+
+.fa-minus-circle {
+    color: red;
+}
+
+.fa-trash {
+    color: red;
+}
+
+.fa-trash:hover {
+    color: rgb(121, 7, 7);
+}
