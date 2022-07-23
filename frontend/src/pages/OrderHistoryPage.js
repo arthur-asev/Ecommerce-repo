@@ -78,21 +78,21 @@ export default function OrderHistoryPage() {
                                 <td>{order._id}</td>
                                 <td>{order.createdAt.substring(0, 10)}</td>
                                 <td>{order.totalPrice.toFixed(2)}</td>
-                                <td>{order.isPaid ? order.paidAt.substring(0, 10) : 'No'}</td>
+                                <td>{order.isPaid ? order.paidAt.substring(0, 10) : 'Não'}</td>
                                 <td>
                                     {order.isDelivered
                                         ? order.deliveredAt.substring(0, 10)
-                                        : 'No'}
+                                        : 'Não'}
                                 </td>
                                 <td>
-                                    <Button
+                                    <Button 
                                         type="button"
-                                        variant="light"
+                                        variant="primary"
                                         onClick={() => {
                                             navigate(`/order/${order._id}`);
                                         }}
                                     >
-                                        Details
+                                        Detalhes
                                     </Button>
                                 </td>
                             </tr>

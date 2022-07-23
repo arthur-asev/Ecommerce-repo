@@ -19,11 +19,7 @@ import PlaceOrderPage from './pages/PlaceOrderPage';
 import OrderPage from './pages/OrderPage';
 import SignupPage from './pages/Signup/SignupPage';
 import OrderHistoryPage from './pages/OrderHistoryPage';
-
-
-
-
-
+import ProfilePage from './pages/ProfilePage';
 
 
 
@@ -37,6 +33,7 @@ function App() {
     localStorage.removeItem('userInfo');
     localStorage.removeItem('shippingAddress');
     localStorage.removeItem('paymentMethod');
+    window.location.href = '/signin';
   };
 
   return (
@@ -94,6 +91,7 @@ function App() {
               <Route path="/cart" element={<CartPage />} />
               <Route path="/signin" element={<SigninPage />} />
               <Route path="/signup" element={<SignupPage />} />
+              <Route path="/profile" element={<ProfilePage />} />
               <Route path="/orderhistory" element={<OrderHistoryPage />}></Route>
               <Route path="/shipping" element={<ShippingAddressPage />}></Route>
               <Route path="/placeorder" element={<PlaceOrderPage />} />
