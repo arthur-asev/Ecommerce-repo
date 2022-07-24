@@ -23,6 +23,7 @@ import { Store } from './Store';
 
 
 
+
 function App() {
 
   const { state, dispatch: ctxDispatch } = useContext(Store);
@@ -44,7 +45,7 @@ function App() {
           <Navbar className='nav' bg="dark" variant="dark" expand="lg" >
             <Container>
               <LinkContainer to="/">
-                <Navbar.Brand>Bem vindo ao A.R.A Clothing</Navbar.Brand>
+                <Navbar.Brand><img width={200} src='/images/logo.svg' alt='logo' /></Navbar.Brand>
               </LinkContainer>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">

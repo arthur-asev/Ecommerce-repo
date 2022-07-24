@@ -51,11 +51,11 @@ function CarrouselImg() {
             ) : error ? (
                 <MessageBox variant="danger">{error}</MessageBox>
             ) : (
-                <Carousel>
+                <Carousel className='shadow p-1 mb-5 bg-white rounded'>
                     {carrousels.map((carrousel) => (
                         <Carousel.Item key={carrousel._id} >
                             <Col>
-                                <img src={carrousel.image} width={800} height={700} className="d-block w-100" alt="imagem não disponível" />
+                                <img src={carrousel.image}  height={800} className="d-block w-100 " alt="imagem não disponível" />
                             </Col>
                             <Carousel.Caption>
                                 <h3>Veja abaixo os Produtos em Destaque</h3>

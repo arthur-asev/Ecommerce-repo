@@ -1,0 +1,44 @@
+<svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="1441px" height="228px">
+<defs>
+<linearGradient id="PSgrad_0" x1="0%" x2="0%" y1="100%" y2="0%">
+  <stop offset="0%" stop-color="rgb(215,215,215)" stop-opacity="0.91" />
+  <stop offset="100%" stop-color="rgb(255,255,255)" stop-opacity="0.91" />
+</linearGradient>
+<filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="1441px" height="228px"  >
+    <feOffset in="SourceAlpha" dx="0" dy="3" />
+    <feGaussianBlur result="blurOut" stdDeviation="2.646" />
+    <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
+    <feComposite operator="atop" in="floodOut" in2="blurOut" />
+    <feComponentTransfer><feFuncA type="linear" slope="1"/></feComponentTransfer>
+    <feMerge>
+    <feMergeNode/>
+    <feMergeNode in="SourceGraphic"/>
+  </feMerge>
+</filter>
+<filter id="Filter_1">
+    <feOffset in="SourceAlpha" dx="0" dy="0" />
+    <feGaussianBlur result="blurOut" stdDeviation="1.414" />
+    <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
+    <feComposite operator="out" in="floodOut" in2="blurOut" result="compOut" />
+    <feComposite operator="in" in="compOut" in2="SourceAlpha" />
+    <feComponentTransfer><feFuncA type="linear" slope="1"/></feComponentTransfer>
+    <feBlend mode="multiply" in2="SourceGraphic" />
+</filter>
+<filter id="Filter_2">
+    <feFlood flood-color="rgb(252, 251, 251)" flood-opacity="1" result="floodOut" />
+    <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+    <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+</filter>
+
+</defs>
+<g filter="url(#Filter_0)">
+<g filter="url(#Filter_1)">
+<g filter="url(#Filter_2)">
+<text kerning="auto" font-family="Myriad Pro" fill="rgb(0, 0, 0)" font-size="250px" x="6px" y="183.519px"><tspan font-size="250px" font-family="Calibri" fill="#DDDADA">A&#32;R&#32;A&#32;Clothing</tspan></text>
+<text kerning="auto" font-family="Myriad Pro" fill="url(#PSgrad_0)" font-size="250px" x="6px" y="183.519px"><tspan font-size="250px" font-family="Calibri" fill="#DDDADA">A&#32;R&#32;A&#32;Clothing</tspan></text>
+<text kerning="auto" font-family="Myriad Pro" stroke-width="1px" stroke="rgb(0, 0, 0)" fill-opacity="0" stroke-opacity="0.54" font-size="250px" x="6px" y="183.519px"><tspan font-size="250px" font-family="Calibri" fill="#DDDADA">A&#32;R&#32;A&#32;Clothing</tspan></text>
+</g></g></g>
+</svg>
