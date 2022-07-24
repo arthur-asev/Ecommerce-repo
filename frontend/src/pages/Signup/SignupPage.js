@@ -57,7 +57,7 @@ export default function SignupPage() {
             <h4 className="my-3">Cadastro</h4>
             <Form className='form' onSubmit={submitHandler}>
                 <Form.Group className="mb-3" controlId="name">
-                    <Form.Label>Name</Form.Label>
+                    <Form.Label>Nome</Form.Label>
                     <Form.Control onChange={(e) => setName(e.target.value)} required />
                 </Form.Group>
 
@@ -90,7 +90,7 @@ export default function SignupPage() {
                 </div>
                 <div className="mb-3">
                     Já Possui Uma Conta?{' '}
-                    <Link to={`/signin?redirect=${redirect}`}>Login</Link>
+                    <Link className='text-primary' to={`/signin?redirect=${redirect}`}>Logar</Link>
                 </div>
             </Form>
         </Container>

@@ -50,6 +50,8 @@ function HomePage() {
             <Helmet>
                 <title>A.R.A Clothing</title>
             </Helmet>
+            <h4>Seja bem vindo ao A.R.A Clothing </h4>
+
             <h4>Produtos Destaque</h4>
             <div className="products">   {loading ? (
                 <LoadingBox />

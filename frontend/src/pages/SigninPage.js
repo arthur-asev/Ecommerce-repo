@@ -42,9 +42,9 @@ export default function SigninPage() {
     return (
         <Container className="small-container">
             <Helmet>
-                <title>Logar</title>
+                <title>Login</title>
             </Helmet>
-            <h4 className="my-3">Logar </h4>
+            <h4 className="my-3">Fazer Login </h4>
             <Form className="form" onSubmit={submitHandler}>
                 <Form.Group className="mb-3" controlId="email">
                     <Form.Label>Email</Form.Label>
@@ -59,7 +59,7 @@ export default function SigninPage() {
                 </div>
                 <div className="mb-3">
                     Novo cliente ? {' '}
-                    <Link to={`/signup?redirect=${redirect}`}>Criar conta</Link>
+                    <Link className='text-primary' to={`/signup?redirect=${redirect}`}>Criar conta</Link>
                 </div>
             </Form>
         </Container>

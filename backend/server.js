@@ -6,6 +6,7 @@ import seedRouter from './routes/seedsRouter.js';
 import productRouter from './routes/productRouter.js';
 import userRouter from './routes/userRouter.js';
 import orderRouter from './routes/orderRouter.js';
+import carrouselRouter from './routes/carrouselRouter.js';
 
 
 
@@ -37,6 +38,7 @@ app.use('/api/seed', seedRouter);
 app.use('/api/products', productRouter);
 app.use('/api/users', userRouter);
 app.use('/api/orders', orderRouter);
+app.use('/api/carrousels',carrouselRouter);
 app.use((err, req, res, next) => {
     res.status(500).send({ message: err.message });
 });

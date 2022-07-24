@@ -8,6 +8,7 @@ import logger from 'use-reducer-logger';
 import { useEffect, useReducer } from 'react';
 import LoadingBox from '../components/LoadingBox';
 import MessageBox from '../components/MessageBox';
+import CarrouselImg from '../components/Carrousel';
 
 const reducer = (state, action) => {
     switch (action.type) {
@@ -24,13 +25,12 @@ const reducer = (state, action) => {
 function HomePage() {
 
 
-    const [{ loading, error, products }, dispatch] = useReducer(logger(reducer), {
+    const [{ loading, error, products,}, dispatch] = useReducer(logger(reducer), {
         products: [],
         loading: true,
         error: '',
     });
 
-    // const [products, setProducts] = useState([]);
     useEffect(() => {
         const fetchData = async () => {
             dispatch({ type: 'FETCH_REQUEST' });
@@ -40,17 +40,23 @@ function HomePage() {
             } catch (err) {
                 dispatch({ type: 'FETCH_FAIL', payload: err.message });
             }
-            // setProducts(result.data);
+
         };
         fetchData();
     }, []);
+
+
 
     return (
         <div>
             <Helmet>
                 <title>A.R.A Clothing</title>
             </Helmet>
-            <h4>Produtos Destaque</h4>
+            <h4>Seja bem vindo ao A.R.A Clothing </h4>
+
+            <CarrouselImg></CarrouselImg>
+     
+            <h4 className="mt-2">Produtos Destaque</h4>
             <div className="products">   {loading ? (
                 <LoadingBox />
             ) : error ? (
@@ -58,7 +64,9 @@ function HomePage() {
             ) : (
                 <Row>
                     {products.map((product) => (
+
                         <Col key={product.slug} sm={6} md={4} lg={3} className="mb-3">
+
                             <Product product={product}></Product>
                         </Col>
                     ))}

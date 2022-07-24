@@ -14,6 +14,31 @@ const data = {
             isAdmin: false,
         },
     ],
+
+    carrousels: [
+
+        {   
+            image: '/images/galeriacarrousel/c1.jpg',
+        },
+        {
+            image: '/images/galeriacarrousel/c2.jpg',
+        },
+        {
+            image: '/images/galeriacarrousel/c3.jpg',
+        },
+        {
+            image: '/images/galeriacarrousel/c4.jpg',
+        },
+        {
+            image: '/images/galeriacarrousel/c5.jpg',
+        },
+        {
+            image: '/images/galeriacarrousel/c6.jpg',
+        },
+
+    ],
+
+
     products: [
         {
 

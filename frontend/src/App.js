@@ -1,25 +1,25 @@
-import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
-import HomePage from './pages/HomePage';
-import ProductPage from './pages/ProductPage';
-import Navbar from 'react-bootstrap/Navbar';
-import Container from 'react-bootstrap/Container';
-import Badge from 'react-bootstrap/Badge';
-import Nav from 'react-bootstrap/Nav';
-import { LinkContainer } from 'react-router-bootstrap';
 import { useContext } from 'react';
-import { Store } from './Store';
-import CartPage from './pages/Cart/CartPage';
+import Badge from 'react-bootstrap/Badge';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import { LinkContainer } from 'react-router-bootstrap';
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import ShippingAddressPage from './pages/ShippingAddressPage';
-import SigninPage from './pages/SigninPage';
+import CartPage from './pages/Cart/CartPage';
+import HomePage from './pages/HomePage';
+import OrderHistoryPage from './pages/OrderHistoryPage';
+import OrderPage from './pages/OrderPage';
 import PaymentMethodScreen from './pages/PaymentMethodPage';
 import PlaceOrderPage from './pages/PlaceOrderPage';
-import OrderPage from './pages/OrderPage';
-import SignupPage from './pages/Signup/SignupPage';
-import OrderHistoryPage from './pages/OrderHistoryPage';
+import ProductPage from './pages/ProductPage';
 import ProfilePage from './pages/ProfilePage';
+import ShippingAddressPage from './pages/ShippingAddressPage';
+import SigninPage from './pages/SigninPage';
+import SignupPage from './pages/Signup/SignupPage';
+import { Store } from './Store';
 
 
 
@@ -44,7 +44,7 @@ function App() {
           <Navbar className='nav' bg="dark" variant="dark" expand="lg" >
             <Container>
               <LinkContainer to="/">
-                <Navbar.Brand>A.R.A Clothing</Navbar.Brand>
+                <Navbar.Brand>Bem vindo ao A.R.A Clothing</Navbar.Brand>
               </LinkContainer>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
@@ -102,8 +102,16 @@ function App() {
             </Routes>
           </Container>
         </main>
+
+
         <footer>
-          <div className="text-center">Footer</div>
+
+          <div>Site desenvolvido por : Arthur Rodrigues </div>
+          <div>
+            <a href='https://github.com/arthur-asev'><img src='/images/GiLogo.png' width={60} height={30} alt='imagem indisponível'></img></a>
+            <a href='https://www.linkedin.com/in/arthur-rodrigues-de-asevêdo-9aa261191/'><img src='/images/linkedin.png' width={30} height={30} alt='imagem indisponível'></img></a>
+          </div>
+
         </footer>
 
       </div>
